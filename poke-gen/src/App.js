@@ -1,9 +1,38 @@
 import './App.css';
+import Team from './components/Team';
+import {useState} from 'react';
 
 function App() {
+
+  // 905 max, min 1
+  const [id, setID] = useState('1');
+  const [pokemon, setPokemon] = useState([]);
+  const [pokeimg, setPokeImg] = useState([]);
+
+  const getData  = () =>{
+    const url = `https://pokeapi.co/api/v2/pokemon/${id}/`;
+
+    fetch(url)
+      .then(resp =>resp.json())
+      .then(data => {
+        setPokemon(data)
+        setPokeImg(data.sprites);
+      })
+  }
+
+  const generateTeam = (e) =>{
+    e.preventDefault();
+    console.log(`POKEMON`);
+    
+    getData();
+  }
+
   return (
     <>
-    
+      <Team poke={pokemon} sprite={pokeimg}/>
+      <form onSubmit={generateTeam}>
+        <button>Generate Team</button>
+      </form>
     </>
   );
 }

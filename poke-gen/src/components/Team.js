@@ -1,8 +1,23 @@
 import React from 'react'
+import Pokemon from './Pokemon'
 
-function Team() {
+function Team({ poke, sprite }) {
     return (
-        <div>Team</div>
+        <>
+            <div>
+                <img src={sprite.front_default} />
+                <div>
+                    {poke.name}<br/>
+                    {poke.id}
+                    
+                </div>
+                {
+                    // poke.map((poke) =>(
+                    //     <Pokemon poke={poke}/>
+                    // ))
+                }
+            </div>
+        </>
     )
 }
 

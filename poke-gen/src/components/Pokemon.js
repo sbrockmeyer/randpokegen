@@ -1,8 +1,12 @@
 import React from 'react'
 
-function Pokemon() {
+function Pokemon({poke}) {
     return (
-        <div>Pokemon</div>
+        <>
+        <div>
+            {poke.name}
+        </div>
+        </>
     )
 }
 
