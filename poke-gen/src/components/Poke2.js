@@ -1,7 +1,6 @@
 import React from 'react'
-import Pokemon from './Pokemon'
 
-function Team({ poke, sprite }) {
+function Poke2({ poke, sprite }) {
     return (
         <>
             <div>
@@ -11,14 +10,9 @@ function Team({ poke, sprite }) {
                     {poke.id}
                     
                 </div>
-                {
-                    // poke.map((poke) =>(
-                    //     <Pokemon poke={poke}/>
-                    // ))
-                }
             </div>
         </>
     )
 }
 
-export default Team
+export default Poke2
