@@ -1,8 +1,17 @@
 import React from 'react'
 
-function Poke5() {
+function Poke5({ poke, sprite }) {
     return (
-        <div>Poke5</div>
+        <>
+        <div>
+            <img src={sprite.front_default} />
+            <div>
+                {poke.name}<br/>
+                {poke.id}
+                
+            </div>
+        </div>
+    </>
     )
 }
 
