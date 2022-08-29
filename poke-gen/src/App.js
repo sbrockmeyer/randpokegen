@@ -20,10 +20,14 @@ function App() {
       })
   }
 
+  const randGen = (min, max) =>{
+    return Math.floor(Math.random() * (max- min +1)) + min;
+  }
+
   const generateTeam = (e) =>{
     e.preventDefault();
     console.log(`POKEMON`);
-    
+    setID(randGen(1, 905))
     getData();
   }
 
