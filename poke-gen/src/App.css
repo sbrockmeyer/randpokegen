@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+
 html{
     background-image: url("./img/Background_img.png");
+    font-family: 'DynaPuff', cursive;
 }
 
 h1{
@@ -9,6 +12,8 @@ h1{
     text-align: center;
     border: 1px solid;
     border-color: black;
+    font-family: 'DynaPuff', cursive;
+
 }
 
 .table{
@@ -23,6 +28,8 @@ td{
     font-size: large;
     font-weight: bold;
     text-shadow: 1px 1px 4px white;
+    font-family: 'DynaPuff', cursive;
+
 }
 
 button{
