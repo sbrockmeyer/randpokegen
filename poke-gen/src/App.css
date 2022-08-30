@@ -1,15 +1,12 @@
+html{
+    background-image: url("./img/Background_img.png");
+}
 
 h1{
     background-color: red;
     color: white;
     text-shadow: 1px 1px 4px black;
     text-align: center;
-}
-
-
-table, tr, td{
-    border: 1px solid;
-    border-color: black;
 }
 
 .table{
@@ -19,9 +16,16 @@ table, tr, td{
 
 td{
     margin: 2px;
+    padding: 2px;
     text-align: center;
+    border: 1px solid;
+    border-color: black;
 }
 
 button{
     border: 1px solid;
+    border-color: black;
+    border-radius: 2px;
+    margin: 2px;
+    cursor: pointer;
 }
