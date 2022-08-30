@@ -177,32 +177,53 @@ function App() {
         }
 
   return (
-    <>
-      <Poke1 poke={pokemon1} sprite={pokeimg1}/>
-      <form onSubmit={generateTeam1}>
-        <button>Pokemon</button>
-      </form>
-      <Poke2 poke={pokemon2} sprite={pokeimg2}/>
-      <form onSubmit={generateTeam2}>
-        <button>Pokemon</button>
-      </form>
-      <Poke3 poke={pokemon3} sprite={pokeimg3}/>
-      <form onSubmit={generateTeam3}>
-        <button>Pokemon</button>
-      </form>
-      <Poke4 poke={pokemon4} sprite={pokeimg4}/>
-      <form onSubmit={generateTeam4}>
-        <button>Pokemon</button>
-      </form>
-      <Poke5 poke={pokemon5} sprite={pokeimg5}/>
-      <form onSubmit={generateTeam5}>
-        <button>Pokemon</button>
-      </form>
-      <Poke6 poke={pokemon6} sprite={pokeimg6}/>
-      <form onSubmit={generateTeam6}>
-        <button>Pokemon</button>
-      </form>
-    </>
+    <body>
+      <h1 className='title'>Pokemon Team</h1>
+    <div className='base'>
+      <table className='table'>
+        <tr className='rows'>
+          <td>
+            <Poke1 poke={pokemon1} sprite={pokeimg1}/>
+            <form onSubmit={generateTeam1}>
+              <button>Pokemon</button>
+            </form>
+          </td>
+          <td>
+            <Poke2 poke={pokemon2} sprite={pokeimg2}/>
+            <form onSubmit={generateTeam2}>
+              <button>Pokemon</button>
+            </form>
+          </td>
+          <td>
+            <Poke3 poke={pokemon3} sprite={pokeimg3}/>
+            <form onSubmit={generateTeam3}>
+              <button>Pokemon</button>
+            </form>
+          </td>
+        </tr>
+        <tr className='rows'>
+          <td>
+            <Poke4 poke={pokemon4} sprite={pokeimg4}/>
+            <form onSubmit={generateTeam4}>
+              <button>Pokemon</button>
+            </form>
+          </td>
+          <td>
+            <Poke5 poke={pokemon5} sprite={pokeimg5}/>
+            <form onSubmit={generateTeam5}>
+              <button>Pokemon</button>
+            </form>
+          </td>
+          <td>
+            <Poke6 poke={pokemon6} sprite={pokeimg6}/>
+            <form onSubmit={generateTeam6}>
+              <button>Pokemon</button>
+            </form>
+          </td>          
+        </tr>
+      </table>
+    </div>
+    </body>
   );
 }
 
